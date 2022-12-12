@@ -2,3 +2,10 @@ chatgpt:
   keyword: chatgpt
   token: your token
   telegram: your telegram token
+line:
+  channelId: your channelId
+  channelSecret: your channelSecret
+dingtalk:
+  accessKeyId: your access key id
+  regionId: your region id
+  endpoint: your end point

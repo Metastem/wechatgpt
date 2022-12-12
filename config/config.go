@@ -8,12 +8,18 @@ var config *Config
 
 type Config struct {
 	ChatGpt ChatGptConfig `json:"chatgpt"`
+	Line    LineConfig    `json:"line"`
 }
 
 type ChatGptConfig struct {
 	Keyword  string `json:"keyword,omitempty"`
 	Token    string `json:"token,omitempty" json:"token,omitempty"`
 	Telegram string `json:"telegram"`
+}
+
+type LineConfig struct {
+	ChannelId     string `json:"channel_id"`
+	ChannelSecret string `json:"channel_secret"`
 }
 
 func LoadConfig() error {
